@@ -1,7 +1,6 @@
 # Useful Scripts
 
-These scripts can be used to move data between MySQL and text files (csv, tsv, json).
-
+These scripts can be used to move data between MySQL and text files (csv, tsv, json). 
 
 ### mysqlToCSV.bash
 
@@ -76,6 +75,15 @@ Example:
 
 ```sh
 python tsv2mySQL.py example.tsv my_database my_new_table '(id int(10), name varchar(20))' 1
+```
+
+## Requirements
+
+The Python scripts use Python 2.7. Package dependencies include standard packages such 
+as sys, os, json, time and datetime and the non-standard package MySQLdb. This can be installed via
+
+```sh
+pip install MySQL-python
 ```
 
 ## License
