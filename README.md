@@ -1,6 +1,6 @@
 # Useful Scripts
 
-These scripts 
+These scripts can be used to move data between MySQL and text files (csv, tsv, json).
 
 
 ### mysqlToCSV.bash
