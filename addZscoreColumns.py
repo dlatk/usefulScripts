@@ -47,6 +47,7 @@ def main(args):
         print("ZSCORING %s in %s" % (col, args.table))
         mean, std = getAvgStdForCol(cur, args.table, col, args.where)
         addZScoreForCol(cur, args.table, col, mean, std, args.where)
+    cur.close()
 
     
 if __name__ == '__main__':
