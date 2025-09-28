@@ -49,8 +49,8 @@ def parse_args():
     p.add_argument("-g", "--group",    required=True, help="Group-by field (e.g., user_id) to check duplicates across")
     p.add_argument("--message_id",     default="message_id", help="Message ID field name (default: message_id)")
     p.add_argument("--min-groups",     type=int, default=2, help="Minimum distinct groups (default: 2)")
-    p.add_argument("--min_chars_to_count", type=int, default=16,
-                   help="Minimum TRIM(message) length to consider at all (default: 16)")
+    p.add_argument("--min_chars_to_count", type=int, default=32,
+                   help="Minimum TRIM(message) length to consider at all (default: 32)")
     p.add_argument("--excerpt_length", type=int, default=196,
                    help="Number of leading characters to show from each message (default: 196)")
     p.add_argument("--limit",          type=int, default=0,
